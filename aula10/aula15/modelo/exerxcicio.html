@@ -6,24 +6,29 @@
     <title>Hora do dia </title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body onload="carregar()">
+<body >
    
         <header>
-              <h1>Hora do dia </h1>
+              <h1>Contar passos </h1>
         </header>
 
         <section>
-                <div>
-             aqui vai aparecer a mensagem...
+                <div id="dados">
+                 <p>Inicio: <input type="number" name="inicio" id="txti"></p>
+                 <p>Fim :   <input type="number" name="fim" id="txtf"> </p>
+                 <p>Passo:  <input type="number" name="passo" id="txtp"> </p>
+                 <input type="button" value="contar" onclick="contar()"> 
                 </div>
-                <div>
-                   
+
+                <div id="res">
+            
+                <p>Impossivel contar !</p>
                     
                 </div>
         </section>
 
         <footer>
-     <p>&copy; jefferson arantes </p>
+     <p>&copy; jefferson Arantes </p>
         </footer>
 
      <script src="script.js"></script>
